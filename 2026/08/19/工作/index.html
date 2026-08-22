@@ -566,7 +566,8 @@
                 owner: 'dox-er',
                 admin: 'dox-er',
                 id: location.pathname,
-                distractionFreeMode: 'true'
+                distractionFreeMode: 'true',
+                redirect_uri: 'https://dox-er.github.io'   // 强制指定回调地址，解决 redirect_uri 不匹配问题
             });
             gitalk.render('gitalk-container');
             </script>
