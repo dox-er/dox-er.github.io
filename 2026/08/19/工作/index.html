@@ -177,7 +177,7 @@
     <div class="inner profile-inner">
         <div class="base-info profile-block">
             <img id="avatar" src="/null" />
-            <h2 id="name">wait...what???</h2>
+            <h2 id="name">wait...what?</h2>
             <h3 id="title">student</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Hefei, China</span>
             <a id="follow" target="_blank" href="https://github.com/dox-er/">FOLLOW</a>
@@ -553,7 +553,6 @@
 
     
     
-        <!-- Gitalk 评论 -->
         <section id="comments">
             <div id="gitalk-container"></div>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
@@ -567,7 +566,7 @@
                 admin: 'dox-er',
                 id: location.pathname,
                 distractionFreeMode: 'true',
-                redirect_uri: 'https://dox-er.github.io'   // 强制指定回调地址，解决 redirect_uri 不匹配问题
+                proxy: 'https://gitalk-proxy.now.sh/'   // 更换为稳定代理
             });
             gitalk.render('gitalk-container');
             </script>
